@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream VaCaTIONS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+    <header class="bg-dark">
+        <div class="container bg-dark navContain">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid" id="theNav">
+                    <a class="navbar-brand" href="./index.html"><img class="theLogo" src="./logo1.svg"
+                            alt="DreamVacations LLC"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="searchBar input-group">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">SEARCH</button>
+                        <input type="text" class="form-control" placeholder=""
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+
+                    <div>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./vacations.html">Vacations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./deals.html">Deals</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">About</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="aboutHero">
+        <div class="aboutHeroImgContainer"> 
+            <div class="card bg-dark text-white" id="aboutHeroCard">
+                <img src="./assets/images/aboutHero1.jpg" class="card-img" alt="Deals Page Ocean Village">
+                <div class="card-img-overlay">
+                  <h3 class="card-title">To a million new horizons...</h3>
+                  
+                </div>
+              </div>
+        </div>
+
+    </div>
+
+    <main class="container">
+        
+        <div class="aboutPage">
+            <h5>About Dream Vacations LLC®</h5>
+            <div class="aboutPara">
+            </div>
+            <div class="dealsIntro">
+                <p>From the beginning, it was never about making money. The money would come. It always does, when excellence leads the way.</p>
+                <p>When Charles Allen JR. envisioned a company that would focus on experiences rather than just destinations, memories more than events, he pulled together ever wonderful experience he'd carefully noted down in his numereous travel scrapbooks over the course of 30 years, and set down to quantify exactly what made them special.</p>
+                <p>The company kept was important: no doubt. The difference between having the people around that brought him joy, and having them accomidated, was all the difference. From there, a thousand small places and finds, a million good feelings and reflections, from the touches of the accomidations, to the look of the mountains and the skies, to the taste of the water.</p>
+                <p>Finally, the piece of mind. That the time was well spent, that money wasn't the solution for everything, and that rest and satisfaction were at the end. All these pooled together to build even beyond what you dream a vacation could be.</p>
+                <p>Take a piece of the dream.</p>
+            </div>
+
+            <div class="contact">
+                <h6>Have questions? Want to talk to us? <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Click here!</a></h6> 
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Your Name</label>
+                            <input type="text" class="form-control" id="name1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">Please add your name so we know who we're helping.</small>
+                          </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Your Message: </label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                      </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCEL</button>
+                  <button type="button" class="btn btn-primary">SEND</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    </main>
+    <div class="container social">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-tiktok"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+    </div>
+    <footer class="bg-dark">
+
+        <p>© 2021 TimeToady Sites • Admin Login</p>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
