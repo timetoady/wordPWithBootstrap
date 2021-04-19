@@ -18,6 +18,13 @@
   font-size: 1rem;
 }
 
+.mainPage {
+  h3 {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
 .topPhotos {
   display: grid;
   grid-template-columns: 1fr;
@@ -25,70 +32,179 @@
   gap: 10px;
 }
 
+.topPhotos img {
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  &:hover {
+    background-color: rgba(197, 25, 25, 0.281);
+  }
+}
+
 #theNav {
   padding: 0;
 }
 
 .navbar-brand {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-.featurePhotos{
-    display: grid;
-    gap: 10px;
-    margin: 1rem 0;
-
+.featurePhotos {
+  display: grid;
+  gap: 10px;
+  margin: 1rem 0;
 }
 
-.card-img-overlay{
-    transition: 300ms ease-in-out;
-    cursor: pointer;
+.card-img-overlay {
+  transition: 300ms ease-in-out;
+  cursor: pointer;
 }
-.card-img-overlay:hover{
-    background-color: rgba(0, 0, 0, 0.582);
-    color: #f2f2f2;
+.card-img-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.582);
+  color: #f2f2f2;
+}
+
+//Deals
+
+#dealHeroCard {
+  border-radius: 0;
+  border: none;
+}
+
+.dealHero {
+  .card-img-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(30, 41, 189, 0.753);
+    border-radius: 50%;
+    max-width: 400px;
+    max-height: 350px;
+    margin: 0 auto;
+    .card-title {
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: rgba(30, 41, 189, 0.945);
+      border-radius: 40%;
+    }
+  }
+}
+
+.dealsIntro {
+  p {
+    font-size: 14px;
+  }
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.dealCarousels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 50%;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 @media screen and (@smallSize) {
-    .navbar-toggler {
-      padding: 0.1rem 0.2rem;
-      font-size: 0.9rem;
-    }
-    .navbar-brand {
-      width: 80%;
-    }
-    #theNav{
-        padding: 0;
-    }
+  .navbar-toggler {
+    padding: 0.1rem 0.2rem;
+    font-size: 0.9rem;
+  }
+  .navbar-brand {
+    width: 80%;
+  }
+  #theNav {
+    padding: 0;
   }
 
+  .dealCarousels {
+    .carousel-caption {
+      h5 {
+        font-size: 1rem;
+      }
+      p {
+        display: none;
+      }
+      button {
+        width: 5px;
+        height: 5px;
+      }
+    }
+  }
+}
 
 @media screen and (@midSize) {
   .topPhotos {
     grid-template-columns: 1fr 1fr;
   }
-  .featurePhotos{
+  .featurePhotos {
     display: grid;
-    grid-template-areas: 
-    "MainPhoto OldPhoto1"
-    "MainPhoto OldPhoto2"
-    "MainPhoto OldPhoto3"
-    ;
+    grid-template-areas:
+      "MainPhoto OldPhoto1"
+      "MainPhoto OldPhoto2"
+      "MainPhoto OldPhoto3";
     gap: 10px;
-    .mainPhoto{
-        grid-area: MainPhoto;
+    .mainPhoto {
+      grid-area: MainPhoto;
     }
-    .firstOldPhoto{
-        grid-area: OldPhoto1;
+    .firstOldPhoto {
+      grid-area: OldPhoto1;
     }
-    .secondOldPhoto{
-        grid-area: OldPhoto2;
+    .secondOldPhoto {
+      grid-area: OldPhoto2;
     }
-    .thirdOldPhoto{
-        grid-area: OldPhoto3;
+    .thirdOldPhoto {
+      grid-area: OldPhoto3;
     }
-}
+  }
+  .dealCarousels {
+    grid-template-columns: 1fr 1fr;
+    .carousel-indicators {
+      h5 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.5rem;
+      }
+      button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.397);
+      border-radius: 20rem;
+      transition: 700ms ease-in-out;
+      opacity: 1;
+      h5 {
+        font-size: 1rem;
+      }
+      p {
+        transition: 700ms ease-in-out;
+        font-size: 0.8rem;
+      }
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.075);
+        p {
+          color: #f2f2f25b;
+        }
 
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 @media screen and (@largeSize) {
@@ -104,9 +220,17 @@
   .navbar-brand {
     margin-right: 1rem;
   }
+  .dealCarousels {
+    .carousel-caption {
+      h5 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
 }
-
-
 
 .social {
   text-align: center;

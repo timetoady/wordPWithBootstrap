@@ -16,11 +16,22 @@
   padding: 0.125rem 0.355rem;
   font-size: 1rem;
 }
+.mainPage h3 {
+  padding: 1rem;
+  text-align: center;
+}
 .topPhotos {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   gap: 10px;
+}
+.topPhotos img {
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.topPhotos img:hover {
+  background-color: rgba(197, 25, 25, 0.281);
 }
 #theNav {
   padding: 0;
@@ -41,6 +52,49 @@
   background-color: rgba(0, 0, 0, 0.582);
   color: #f2f2f2;
 }
+#dealHeroCard {
+  border-radius: 0;
+  border: none;
+}
+.dealHero .card-img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(30, 41, 189, 0.753);
+  border-radius: 50%;
+  max-width: 400px;
+  max-height: 350px;
+  margin: 0 auto;
+}
+.dealHero .card-img-overlay .card-title {
+  text-align: center;
+}
+.dealHero .card-img-overlay:hover {
+  background-color: rgba(30, 41, 189, 0.945);
+  border-radius: 40%;
+}
+.dealsIntro {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.dealsIntro p {
+  font-size: 14px;
+}
+.dealCarousels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.dealCarousels .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 50%;
+}
+.carousel-indicators [data-bs-target] {
+  margin-right: 8px;
+  margin-left: 8px;
+}
 @media screen and (max-width: 409px) {
   .navbar-toggler {
     padding: 0.1rem 0.2rem;
@@ -51,6 +105,16 @@
   }
   #theNav {
     padding: 0;
+  }
+  .dealCarousels .carousel-caption h5 {
+    font-size: 1rem;
+  }
+  .dealCarousels .carousel-caption p {
+    display: none;
+  }
+  .dealCarousels .carousel-caption button {
+    width: 5px;
+    height: 5px;
   }
 }
 @media screen and (min-width: 700px) {
@@ -74,6 +138,40 @@
   .featurePhotos .thirdOldPhoto {
     grid-area: OldPhoto3;
   }
+  .dealCarousels {
+    grid-template-columns: 1fr 1fr;
+  }
+  .dealCarousels .carousel-indicators h5 {
+    font-size: 1rem;
+  }
+  .dealCarousels .carousel-indicators p {
+    font-size: 0.5rem;
+  }
+  .dealCarousels .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .dealCarousels .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 20rem;
+    transition: 700ms ease-in-out;
+    opacity: 1;
+  }
+  .dealCarousels .carousel-caption h5 {
+    font-size: 1rem;
+  }
+  .dealCarousels .carousel-caption p {
+    transition: 700ms ease-in-out;
+    font-size: 0.8rem;
+  }
+  .dealCarousels .carousel-caption:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+  }
+  .dealCarousels .carousel-caption:hover p {
+    color: #f2f2f25b;
+  }
 }
 @media screen and (min-width: 1000px) {
   .topPhotos {
@@ -85,6 +183,12 @@
   }
   .navbar-brand {
     margin-right: 1rem;
+  }
+  .dealCarousels .carousel-caption h5 {
+    font-size: 2rem;
+  }
+  .dealCarousels .carousel-caption p {
+    font-size: 1rem;
   }
 }
 .social {
