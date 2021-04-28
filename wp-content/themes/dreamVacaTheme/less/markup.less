@@ -1,0 +1,372 @@
+@import "./variables.less";
+@import "./mixins.less";
+
+.container {
+  width: 100%;
+}
+
+.theLogo {
+  width: 100%;
+}
+
+.searchBar {
+  position: relative;
+}
+
+.navbar-toggler {
+  padding: 0.125rem 0.355rem;
+  font-size: 1rem;
+}
+
+.mainPage {
+  h5 {
+    #pageTitle;
+  }
+}
+
+.topPhotos {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.topPhotos img {
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  &:hover {
+    background-color: rgba(197, 25, 25, 0.281);
+  }
+}
+
+#theNav {
+  padding: 0;
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+.featurePhotos {
+  display: grid;
+  gap: 10px;
+  margin: 1rem 0;
+  .card{
+    border: none;
+  }
+  .card-title{
+    #textShadow;
+  }
+  .card-text{
+    display: none;
+    #textShadow;
+  }
+  .card-text2{
+    #textShadow;
+  }
+  .card-img-overlay{
+    background: linear-gradient(to right, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 10%,rgba(0,0,0,0.15) 25%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.15) 75%,rgba(0,0,0,0.05) 90%,rgba(0,0,0,0.05) 100%);
+    color: #f2f2f2;
+  }
+}
+
+
+
+//Deals
+
+#dealHeroCard {
+  border-radius: 0;
+  border: none;
+}
+
+.dealHero {
+  .card-img-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(30, 41, 189, 0.753);
+    border-radius: 50%;
+    max-width: 400px;
+    max-height: 350px;
+    margin: 0 auto;
+    .card-title {
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: rgba(30, 41, 189, 0.945);
+      border-radius: 40%;
+    }
+  }
+}
+
+.dealsIntro {
+  p {
+    font-size: 14px;
+  }
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.dealCarousels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 50%;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+//Vacations
+.vacationMain {
+  padding: 1rem 0;
+  h5 {
+    #pageTitle;
+  }
+}
+.vacations {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.75rem;
+  gap: 10px;
+  .card {
+    border: none;
+  }
+  .card-img-overlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: unset;
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(181, 189, 200, 0) 0%,
+      rgba(0, 0, 0, 0.21) 26%,
+      rgba(40, 52, 59, 0.75) 94%,
+      rgba(40, 52, 59, 0.8) 100%
+    );
+    .card-title {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+      color: #f2f2f2;
+      #textShadow;
+    }
+    button {
+      font-size: 0.6rem;
+      padding: 0.2rem 0.5rem;
+      word-wrap: normal !important;
+    }
+  }
+}
+
+//About
+
+.aboutHero {
+  .aboutHeroImgContainer {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  #aboutHeroCard {
+    .card-title {
+      #textShadow;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.aboutPage {
+  h5 {
+    #pageTitle;
+  }
+  .contact{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+footer{
+  p{
+    margin: 0;
+  }
+}
+
+@media screen and (@smallSize) {
+  .navbar-toggler {
+    padding: 0.1rem 0.2rem;
+    font-size: 0.9rem;
+  }
+  .navbar-brand {
+    width: 80%;
+  }
+  #theNav {
+    padding: 0;
+  }
+
+  .dealCarousels {
+    .carousel-caption {
+      h5 {
+        font-size: 1rem;
+      }
+      p {
+        display: none;
+      }
+      button {
+        width: 5px;
+        height: 5px;
+      }
+    }
+  }
+  .vacations {
+    button {
+      background-color: #0d6dfd9f;
+    }
+  }
+}
+
+@media screen and (@midSize) {
+  .topPhotos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-img-overlay {
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+    background-color: none;
+    
+  }
+  .card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.582);
+    color: #f2f2f2;
+  }
+  .featurePhotos {
+    display: grid;
+    grid-template-areas:
+      "MainPhoto OldPhoto1"
+      "MainPhoto OldPhoto2"
+      "MainPhoto OldPhoto3";
+    gap: 10px;
+    .mainPhoto {
+      grid-area: MainPhoto;
+    }
+    .firstOldPhoto {
+      grid-area: OldPhoto1;
+    }
+    .secondOldPhoto {
+      grid-area: OldPhoto2;
+    }
+    .thirdOldPhoto {
+      grid-area: OldPhoto3;
+    }
+
+    .card-text{
+      display: block;
+      font-size: .8rem;
+    }
+  }
+  .dealCarousels {
+    grid-template-columns: 1fr 1fr;
+    .carousel-indicators {
+      h5 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.5rem;
+      }
+      button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.397);
+      border-radius: 20rem;
+      transition: 700ms ease-in-out;
+      opacity: 1;
+      h5 {
+        font-size: 1rem;
+      }
+      p {
+        transition: 700ms ease-in-out;
+        font-size: 0.8rem;
+      }
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.075);
+        p {
+          color: #f2f2f25b;
+        }
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  .vacations {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (@largeSize) {
+  .topPhotos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .theLogo {
+    width: 100%;
+    min-width: 300px;
+  }
+.featurePhotos{
+  .card-text{
+    display: block;
+    font-size: 1rem;
+  }
+}
+  .navbar-brand {
+    margin-right: 1rem;
+  }
+  .dealCarousels {
+    .carousel-caption {
+      h5 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .vacations {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.social {
+  text-align: center;
+  font-size: 40px;
+}
+
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  p {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
