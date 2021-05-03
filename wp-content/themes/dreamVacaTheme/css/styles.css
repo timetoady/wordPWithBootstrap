@@ -3,75 +3,136 @@
   text-emphasis: none;
   text-decoration: none;
 }
+
 #pageTitle {
   padding: 1rem;
   text-align: center;
 }
+
 #textShadow {
   text-shadow: 2px 2px 3px black;
 }
+
 .container {
   width: 100%;
 }
+
 .theLogo {
   width: 100%;
 }
+
 .searchBar {
   position: relative;
 }
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+}
+
+.menu-item a{
+  display: block;
+  color: rgba(255, 255, 255, .55);
+  margin: 0;
+  align-items: center;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
 .navbar-toggler {
   padding: 0.125rem 0.355rem;
   font-size: 1rem;
 }
+
+.menu-menu-1-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu-menu-1-container .menu-item a{
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #f3f3f3
+}
+.menu-menu-1-container .current-menu-item a{
+  text-decoration: underline;
+  text-decoration-color: yellow;
+
+}
+
+
+
 .mainPage h5 {
   padding: 1rem;
   text-align: center;
 }
+
 .topPhotos {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   gap: 10px;
 }
+
 .topPhotos img {
   cursor: pointer;
   transition: 300ms ease-in-out;
 }
+
 .topPhotos img:hover {
   background-color: rgba(197, 25, 25, 0.281);
 }
+
 #theNav {
   padding: 0;
 }
+
 .navbar-brand {
   margin-right: 0;
 }
+
 .featurePhotos {
   display: grid;
   gap: 10px;
   margin: 1rem 0;
 }
+
 .featurePhotos .card {
   border: none;
 }
+
 .featurePhotos .card-title {
   text-shadow: 2px 2px 3px black;
 }
+
 .featurePhotos .card-text {
   display: none;
   text-shadow: 2px 2px 3px black;
 }
+
 .featurePhotos .card-text2 {
   text-shadow: 2px 2px 3px black;
 }
+
 .featurePhotos .card-img-overlay {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 10%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.05) 90%, rgba(0, 0, 0, 0.05) 100%);
+  background: linear-gradient(to bottom, rgba(181, 189, 200, 0) 0%, rgba(0, 0, 0, 0.21) 26%, rgba(40, 52, 59, 0.75) 94%, rgba(40, 52, 59, 0.8) 100%);
   color: #f2f2f2;
 }
+
 #dealHeroCard {
   border-radius: 0;
   border: none;
 }
+
 .dealHero .card-img-overlay {
   display: flex;
   align-items: center;
@@ -82,51 +143,63 @@
   max-height: 350px;
   margin: 0 auto;
 }
+
 .dealHero .card-img-overlay .card-title {
   text-align: center;
 }
+
 .dealHero .card-img-overlay:hover {
   background-color: rgba(30, 41, 189, 0.945);
   border-radius: 40%;
 }
+
 .dealsIntro {
   max-width: 600px;
   margin: 0 auto;
   padding: 1rem;
 }
+
 .dealsIntro p {
   font-size: 14px;
 }
+
 .dealCarousels {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
   margin-bottom: 20px;
 }
+
 .dealCarousels .carousel-caption {
   background-color: rgba(0, 0, 0, 0.397);
   border-radius: 50%;
 }
+
 .carousel-indicators [data-bs-target] {
   margin-right: 8px;
   margin-left: 8px;
 }
+
 .vacationMain {
   padding: 1rem 0;
 }
+
 .vacationMain h5 {
   padding: 1rem;
   text-align: center;
 }
+
 .vacations {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0.75rem;
   gap: 10px;
 }
+
 .vacations .card {
   border: none;
 }
+
 .vacations .card-img-overlay {
   display: flex;
   justify-content: space-between;
@@ -135,25 +208,30 @@
   bottom: 0;
   background: linear-gradient(to bottom, rgba(181, 189, 200, 0) 0%, rgba(0, 0, 0, 0.21) 26%, rgba(40, 52, 59, 0.75) 94%, rgba(40, 52, 59, 0.8) 100%);
 }
+
 .vacations .card-img-overlay .card-title {
   margin-bottom: 0;
   font-size: 0.95rem;
   color: #f2f2f2;
   text-shadow: 2px 2px 3px black;
 }
+
 .vacations .card-img-overlay button {
   font-size: 0.6rem;
   padding: 0.2rem 0.5rem;
   word-wrap: normal !important;
 }
+
 .aboutHero .aboutHeroImgContainer {
   position: relative;
   height: 200px;
   overflow: hidden;
 }
+
 .aboutHero #aboutHeroCard .card-title {
   text-shadow: 2px 2px 3px black;
 }
+
 .aboutHero #aboutHeroCard img {
   position: absolute;
   top: 0;
@@ -162,149 +240,201 @@
   width: 100%;
   height: auto;
 }
+
 .aboutPage h5 {
   padding: 1rem;
   text-align: center;
 }
+
 .aboutPage .contact {
   max-width: 600px;
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
 }
+
 footer p {
   margin: 0;
 }
+
 @media screen and (max-width: 409px) {
   .navbar-toggler {
     padding: 0.1rem 0.2rem;
     font-size: 0.9rem;
   }
+
   .navbar-brand {
     width: 80%;
   }
+
   #theNav {
     padding: 0;
   }
+
   .dealCarousels .carousel-caption h5 {
     font-size: 1rem;
   }
+
   .dealCarousels .carousel-caption p {
     display: none;
   }
+
   .dealCarousels .carousel-caption button {
     width: 5px;
     height: 5px;
   }
+
   .vacations button {
     background-color: #0d6dfd9f;
   }
 }
+
 @media screen and (min-width: 700px) {
   .topPhotos {
     grid-template-columns: 1fr 1fr;
   }
+
   .card-img-overlay {
     transition: 300ms ease-in-out;
     cursor: pointer;
     background-color: none;
   }
+
   .card-img-overlay:hover {
     background-color: rgba(0, 0, 0, 0.582);
     color: #f2f2f2;
   }
+
   .featurePhotos {
     display: grid;
-    grid-template-areas: "MainPhoto OldPhoto1" "MainPhoto OldPhoto2" "MainPhoto OldPhoto3";
+    grid-template-areas: "MainPhoto OldPhoto1""MainPhoto OldPhoto2""MainPhoto OldPhoto3";
     gap: 10px;
   }
+
   .featurePhotos .mainPhoto {
     grid-area: MainPhoto;
   }
+
   .featurePhotos .firstOldPhoto {
     grid-area: OldPhoto1;
   }
+
   .featurePhotos .secondOldPhoto {
     grid-area: OldPhoto2;
   }
+
   .featurePhotos .thirdOldPhoto {
     grid-area: OldPhoto3;
   }
+  .featurePhotos .thirdOldPhoto .cart-text p{
+    font-size: .6rem
+  }
+  .aboutHero #aboutHeroCard .card-title {
+    text-shadow: 2px 2px 3px black;
+  }
+
   .featurePhotos .card-text {
     display: block;
     font-size: 0.8rem;
   }
+
   .dealCarousels {
     grid-template-columns: 1fr 1fr;
   }
+
   .dealCarousels .carousel-indicators h5 {
     font-size: 1rem;
   }
+
   .dealCarousels .carousel-indicators p {
     font-size: 0.5rem;
   }
+
   .dealCarousels .carousel-indicators button {
     width: 10px;
     height: 10px;
     border-radius: 50%;
   }
+
   .dealCarousels .carousel-caption {
     background-color: rgba(0, 0, 0, 0.397);
     border-radius: 20rem;
     transition: 700ms ease-in-out;
     opacity: 1;
   }
+
   .dealCarousels .carousel-caption h5 {
     font-size: 1rem;
   }
+
   .dealCarousels .carousel-caption p {
     transition: 700ms ease-in-out;
     font-size: 0.8rem;
   }
+
   .dealCarousels .carousel-caption:hover {
     background-color: rgba(0, 0, 0, 0.075);
     cursor: pointer;
   }
+
   .dealCarousels .carousel-caption:hover p {
     color: #f2f2f25b;
   }
+
   .vacations {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+footer a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #f2f2f2
+}
+
 @media screen and (min-width: 1000px) {
   .topPhotos {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .theLogo {
     width: 100%;
     min-width: 300px;
   }
+
   .featurePhotos .card-text {
     display: block;
     font-size: 1rem;
   }
+
   .navbar-brand {
     margin-right: 1rem;
   }
+
   .dealCarousels .carousel-caption h5 {
     font-size: 2rem;
   }
+
   .dealCarousels .carousel-caption p {
     font-size: 1rem;
   }
+
   .vacations {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 .social {
   text-align: center;
   font-size: 40px;
 }
+
 footer {
   color: #f2f2f2;
   text-align: center;
 }
+
 footer p {
   padding: 0.5rem;
   font-size: 0.8rem;
