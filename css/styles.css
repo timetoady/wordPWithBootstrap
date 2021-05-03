@@ -5,7 +5,7 @@
 }
 #pageTitle {
   padding: 1rem;
-  text-align: center;
+  text-align: left;
 }
 #textShadow {
   text-shadow: 2px 2px 3px black;
@@ -25,7 +25,7 @@
 }
 .mainPage h5 {
   padding: 1rem;
-  text-align: center;
+  text-align: left;
 }
 .topPhotos {
   display: grid;
@@ -116,7 +116,7 @@
 }
 .vacationMain h5 {
   padding: 1rem;
-  text-align: center;
+  text-align: left;
 }
 .vacations {
   display: grid;
@@ -164,7 +164,7 @@
 }
 .aboutPage h5 {
   padding: 1rem;
-  text-align: center;
+  text-align: left;
 }
 .aboutPage .contact {
   max-width: 600px;
