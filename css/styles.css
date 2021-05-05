@@ -176,6 +176,9 @@ footer a {
   color: #f2f2f2;
   font-size: 16px;
 }
+div.galleries:nth-child(2) {
+  text-align: right;
+}
 @media screen and (max-width: 1199px) {
   .aboutPara {
     max-width: 70%;
