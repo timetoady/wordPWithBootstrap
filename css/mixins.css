@@ -2,11 +2,24 @@
   list-style: none;
   text-emphasis: none;
   text-decoration: none;
+  color: #f2f2f2;
 }
 #pageTitle {
   padding: 1rem;
-  text-align: center;
+  text-align: left;
 }
 #textShadow {
   text-shadow: 2px 2px 3px black;
+}
+#buttonBig {
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: black;
+  color: #f2f2f2;
+  transition: ease-in-out 300ms;
+}
+#buttonBig:hover {
+  background-color: #242424;
+  color: #0D6EFD;
 }

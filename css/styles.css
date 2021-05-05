@@ -2,6 +2,7 @@
   list-style: none;
   text-emphasis: none;
   text-decoration: none;
+  color: #f2f2f2;
 }
 #pageTitle {
   padding: 1rem;
@@ -10,22 +11,27 @@
 #textShadow {
   text-shadow: 2px 2px 3px black;
 }
+#buttonBig {
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: black;
+  color: #f2f2f2;
+  transition: ease-in-out 300ms;
+}
+#buttonBig:hover {
+  background-color: #242424;
+  color: #0D6EFD;
+}
 .container {
   width: 100%;
 }
 .theLogo {
   width: 100%;
 }
-.searchBar {
-  position: relative;
-}
 .navbar-toggler {
   padding: 0.125rem 0.355rem;
   font-size: 1rem;
-}
-.mainPage h5 {
-  padding: 1rem;
-  text-align: left;
 }
 .topPhotos {
   display: grid;
@@ -33,118 +39,95 @@
   align-items: center;
   gap: 10px;
 }
-.topPhotos img {
-  cursor: pointer;
-  transition: 300ms ease-in-out;
-}
-.topPhotos img:hover {
-  background-color: rgba(197, 25, 25, 0.281);
-}
 #theNav {
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .navbar-brand {
   margin-right: 0;
 }
-.featurePhotos {
-  display: grid;
-  gap: 10px;
-  margin: 1rem 0;
-}
-.featurePhotos .card {
-  border: none;
-}
-.featurePhotos .card-title {
-  text-shadow: 2px 2px 3px black;
-}
-.featurePhotos .card-text {
-  display: none;
-  text-shadow: 2px 2px 3px black;
-}
-.featurePhotos .card-text2 {
-  text-shadow: 2px 2px 3px black;
-}
-.featurePhotos .card-img-overlay {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 10%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.05) 90%, rgba(0, 0, 0, 0.05) 100%);
-  color: #f2f2f2;
-}
-#dealHeroCard {
-  border-radius: 0;
-  border: none;
-}
-.dealHero .card-img-overlay {
+.flexEvenly {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(30, 41, 189, 0.753);
-  border-radius: 50%;
-  max-width: 400px;
-  max-height: 350px;
-  margin: 0 auto;
+  justify-content: space-evenly;
 }
-.dealHero .card-img-overlay .card-title {
+.flexEvenly .menuTab {
+  width: 50%;
+}
+.flexEvenly img {
+  width: 100%;
+}
+.nav-link button {
+  background-color: black !important;
+}
+.tab-pane .nav-link.active {
+  background-color: black !important;
+}
+.whatWeDo {
+  margin-top: 1rem;
+}
+.bookHere {
   text-align: center;
-}
-.dealHero .card-img-overlay:hover {
-  background-color: rgba(30, 41, 189, 0.945);
-  border-radius: 40%;
-}
-.dealsIntro {
-  max-width: 600px;
-  margin: 0 auto;
   padding: 1rem;
 }
-.dealsIntro p {
-  font-size: 14px;
-}
-.dealCarousels {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.dealCarousels .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.397);
-  border-radius: 50%;
-}
-.carousel-indicators [data-bs-target] {
-  margin-right: 8px;
-  margin-left: 8px;
-}
-.vacationMain {
-  padding: 1rem 0;
-}
-.vacationMain h5 {
-  padding: 1rem;
-  text-align: left;
-}
-.vacations {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 0.75rem;
-  gap: 10px;
-}
-.vacations .card {
-  border: none;
-}
-.vacations .card-img-overlay {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: unset;
-  bottom: 0;
-  background: linear-gradient(to bottom, rgba(181, 189, 200, 0) 0%, rgba(0, 0, 0, 0.21) 26%, rgba(40, 52, 59, 0.75) 94%, rgba(40, 52, 59, 0.8) 100%);
-}
-.vacations .card-img-overlay .card-title {
-  margin-bottom: 0;
-  font-size: 0.95rem;
+.bookHere button {
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: black;
   color: #f2f2f2;
-  text-shadow: 2px 2px 3px black;
+  transition: ease-in-out 300ms;
 }
-.vacations .card-img-overlay button {
-  font-size: 0.6rem;
-  padding: 0.2rem 0.5rem;
-  word-wrap: normal !important;
+.bookHere button:hover {
+  background-color: #242424;
+  color: #0D6EFD;
+}
+.servicesUl {
+  list-style-type: "※";
+}
+.banquetGrid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+.banquetGrid img {
+  width: 100%;
+}
+.banquetGrid ul {
+  list-style-type: "※";
+}
+.banquetGrid h6 {
+  margin: 0.5rem 0 0 0;
+  text-transform: capitalize;
+}
+.menu {
+  margin-top: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.liteMenuGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.75rem;
+}
+.liteMenuGrid .card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card-img-overlay {
+  max-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img-overlay .card-title {
+  text-shadow: 2px 2px 8px black;
+}
+.overflow-auto {
+  max-height: 30rem;
 }
 .aboutHero .aboutHeroImgContainer {
   position: relative;
@@ -162,6 +145,12 @@
   width: 100%;
   height: auto;
 }
+.aboutPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .aboutPage h5 {
   padding: 1rem;
   text-align: left;
@@ -172,129 +161,56 @@
   padding: 1rem;
   text-align: center;
 }
+footer .footerFlex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 footer p {
   margin: 0;
 }
-@media screen and (max-width: 409px) {
-  .navbar-toggler {
-    padding: 0.1rem 0.2rem;
+footer a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+@media screen and (max-width: 1199px) {
+  .aboutPara {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aboutPara {
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .flexEvenly {
+    flex-direction: column;
+  }
+  .flexEvenly .menuTab {
+    width: 100%;
+  }
+  .banquetGrid {
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    margin-top: 1rem !important;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .nav-link {
     font-size: 0.9rem;
   }
-  .navbar-brand {
-    width: 80%;
-  }
-  #theNav {
-    padding: 0;
-  }
-  .dealCarousels .carousel-caption h5 {
-    font-size: 1rem;
-  }
-  .dealCarousels .carousel-caption p {
-    display: none;
-  }
-  .dealCarousels .carousel-caption button {
-    width: 5px;
-    height: 5px;
-  }
-  .vacations button {
-    background-color: #0d6dfd9f;
-  }
-}
-@media screen and (min-width: 700px) {
-  .topPhotos {
+  .liteMenuGrid {
+    gap: 6px;
     grid-template-columns: 1fr 1fr;
+    padding: 0.5rem;
   }
-  .card-img-overlay {
-    transition: 300ms ease-in-out;
-    cursor: pointer;
-    background-color: none;
-  }
-  .card-img-overlay:hover {
-    background-color: rgba(0, 0, 0, 0.582);
-    color: #f2f2f2;
-  }
-  .featurePhotos {
-    display: grid;
-    grid-template-areas: "MainPhoto OldPhoto1" "MainPhoto OldPhoto2" "MainPhoto OldPhoto3";
-    gap: 10px;
-  }
-  .featurePhotos .mainPhoto {
-    grid-area: MainPhoto;
-  }
-  .featurePhotos .firstOldPhoto {
-    grid-area: OldPhoto1;
-  }
-  .featurePhotos .secondOldPhoto {
-    grid-area: OldPhoto2;
-  }
-  .featurePhotos .thirdOldPhoto {
-    grid-area: OldPhoto3;
-  }
-  .featurePhotos .card-text {
-    display: block;
-    font-size: 0.8rem;
-  }
-  .dealCarousels {
-    grid-template-columns: 1fr 1fr;
-  }
-  .dealCarousels .carousel-indicators h5 {
-    font-size: 1rem;
-  }
-  .dealCarousels .carousel-indicators p {
-    font-size: 0.5rem;
-  }
-  .dealCarousels .carousel-indicators button {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-  }
-  .dealCarousels .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.397);
-    border-radius: 20rem;
-    transition: 700ms ease-in-out;
-    opacity: 1;
-  }
-  .dealCarousels .carousel-caption h5 {
-    font-size: 1rem;
-  }
-  .dealCarousels .carousel-caption p {
-    transition: 700ms ease-in-out;
-    font-size: 0.8rem;
-  }
-  .dealCarousels .carousel-caption:hover {
-    background-color: rgba(0, 0, 0, 0.075);
-    cursor: pointer;
-  }
-  .dealCarousels .carousel-caption:hover p {
-    color: #f2f2f25b;
-  }
-  .vacations {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .topPhotos {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .theLogo {
-    width: 100%;
-    min-width: 300px;
-  }
-  .featurePhotos .card-text {
-    display: block;
-    font-size: 1rem;
-  }
-  .navbar-brand {
-    margin-right: 1rem;
-  }
-  .dealCarousels .carousel-caption h5 {
-    font-size: 2rem;
-  }
-  .dealCarousels .carousel-caption p {
-    font-size: 1rem;
-  }
-  .vacations {
-    grid-template-columns: 1fr 1fr 1fr;
+  .aboutPara {
+    max-width: 100%;
   }
 }
 .social {
@@ -308,4 +224,33 @@ footer {
 footer p {
   padding: 0.5rem;
   font-size: 0.8rem;
+}
+footer a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+@media screen and (max-width: 409px) {
+  .navbar-toggler {
+    padding: 0.1rem 0.2rem;
+    font-size: 0.9rem;
+  }
+  .navbar-brand {
+    width: 80%;
+  }
+  #theNav {
+    padding: 0;
+  }
+  .nav-link {
+    font-size: 0.7rem;
+  }
+  .liteMenuGrid {
+    gap: 4px;
+    grid-template-columns: 1fr !important;
+    padding: 0.25rem;
+  }
+  .aboutPara {
+    max-width: 100%;
+  }
 }
