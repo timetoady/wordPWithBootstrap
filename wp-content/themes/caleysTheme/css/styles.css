@@ -1,0 +1,261 @@
+#links {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+#pageTitle {
+  padding: 1rem;
+  text-align: left;
+}
+#textShadow {
+  text-shadow: 2px 2px 3px black;
+}
+#buttonBig {
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: black;
+  color: #f2f2f2;
+  transition: ease-in-out 300ms;
+}
+#buttonBig:hover {
+  background-color: #242424;
+  color: #0D6EFD;
+}
+.container {
+  width: 100%;
+}
+.theLogo {
+  width: 100%;
+}
+.navbar-toggler {
+  padding: 0.125rem 0.355rem;
+  font-size: 1rem;
+}
+.topPhotos {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 10px;
+}
+#theNav {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-brand {
+  margin-right: 0;
+}
+.flexEvenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+.flexEvenly .menuTab {
+  width: 50%;
+}
+.flexEvenly img {
+  width: 100%;
+}
+.nav-link button {
+  background-color: black !important;
+}
+.tab-pane .nav-link.active {
+  background-color: black !important;
+}
+.whatWeDo {
+  margin-top: 1rem;
+}
+.bookHere {
+  text-align: center;
+  padding: 1rem;
+}
+.bookHere button {
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: black;
+  color: #f2f2f2;
+  transition: ease-in-out 300ms;
+}
+.bookHere button:hover {
+  background-color: #242424;
+  color: #0D6EFD;
+}
+.servicesUl {
+  list-style-type: "※";
+}
+.banquetGrid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+.banquetGrid img {
+  width: 100%;
+}
+.banquetGrid ul {
+  list-style-type: "※";
+}
+.banquetGrid h6 {
+  margin: 0.5rem 0 0 0;
+  text-transform: capitalize;
+}
+.menu {
+  margin-top: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.liteMenuGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.75rem;
+}
+.liteMenuGrid .card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card-img-overlay {
+  max-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img-overlay .card-title {
+  text-shadow: 2px 2px 8px black;
+}
+.overflow-auto {
+  max-height: 30rem;
+}
+.aboutHero .aboutHeroImgContainer {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.aboutHero #aboutHeroCard .card-title {
+  text-shadow: 2px 2px 3px black;
+}
+.aboutHero #aboutHeroCard img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.aboutPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutPage h5 {
+  padding: 1rem;
+  text-align: left;
+}
+.aboutPage .contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+footer .footerFlex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+.galleries {
+  text-align: center;
+  display: grid;
+  gap: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .aboutPara {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aboutPara {
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .flexEvenly {
+    flex-direction: column;
+  }
+  .flexEvenly .menuTab {
+    width: 100%;
+  }
+  .banquetGrid {
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    margin-top: 1rem !important;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+  }
+  .liteMenuGrid {
+    gap: 6px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5rem;
+  }
+  .aboutPara {
+    max-width: 100%;
+  }
+}
+.social {
+  text-align: center;
+  font-size: 40px;
+}
+footer {
+  color: #f2f2f2;
+  text-align: center;
+}
+footer p {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+footer a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+@media screen and (max-width: 409px) {
+  .navbar-toggler {
+    padding: 0.1rem 0.2rem;
+    font-size: 0.9rem;
+  }
+  .navbar-brand {
+    width: 80%;
+  }
+  #theNav {
+    padding: 0;
+  }
+  .nav-link {
+    font-size: 0.7rem;
+  }
+  .liteMenuGrid {
+    gap: 4px;
+    grid-template-columns: 1fr !important;
+    padding: 0.25rem;
+  }
+  .aboutPara {
+    max-width: 100%;
+  }
+}

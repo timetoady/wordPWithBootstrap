@@ -1,0 +1,275 @@
+@import "./variables.less";
+@import "./mixins.less";
+
+.container {
+  width: 100%;
+}
+
+.theLogo {
+  width: 100%;
+}
+
+.navbar-toggler {
+  padding: 0.125rem 0.355rem;
+  font-size: 1rem;
+}
+
+.topPhotos {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+#theNav {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+//Landing/Services
+
+.flexEvenly {
+  display: flex;
+  justify-content: space-evenly;
+  .menuTab{
+    width: 50%;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+.nav-link{
+  button {background-color: black !important;}
+}
+
+.tab-pane{
+  .nav-link.active{
+    background-color: black !important;
+  }
+}
+
+.whatWeDo {
+  margin-top: 1rem;
+}
+
+.bookHere {
+  text-align: center;
+  padding: 1rem;
+  button {
+    #buttonBig;
+  }
+}
+
+.servicesUl{
+  list-style-type: "※";
+}
+
+.banquetGrid{
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  img{
+    width: 100%;
+  }
+  ul{
+    list-style-type: "※";
+  }
+  h6{
+    margin: .5rem 0 0 0;
+    text-transform: capitalize;
+  }
+}
+.menu{
+  margin-top: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+
+}
+
+.liteMenuGrid{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: .75rem;
+  .card{
+  
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+
+.card-img-overlay{
+  max-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card-title{
+    text-shadow: 2px 2px 8px black;
+  }
+
+}
+
+.overflow-auto{
+  max-height: 30rem;
+}
+
+
+
+//About
+
+.aboutHero {
+  .aboutHeroImgContainer {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  #aboutHeroCard {
+    .card-title {
+      #textShadow;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.aboutPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h5 {
+    #pageTitle;
+  }
+  .contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+}
+
+footer {
+  .footerFlex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  p {
+    margin: 0;
+  }
+  a{
+    #links;
+    font-size: 16px;
+  }
+}
+
+//Galleries
+.galleries{
+  text-align: center;
+  display: grid;
+  gap: 20px;
+}
+
+
+@media screen and (@largeSize) {
+  .aboutPara{
+    max-width: 70%;
+  }
+}
+
+@media screen and (@verylargeSize) {
+  .aboutPara{
+    max-width: 60%;
+  }
+}
+
+@media screen and (@midSize) {
+  .flexEvenly {
+    flex-direction: column;
+    .menuTab{
+      width: 100%;
+    }
+  }
+  .banquetGrid{
+    grid-template-columns: 1fr;
+  }
+  .menu{
+    margin-top: 1rem !important;
+    max-width: 100%;
+    margin: 0 auto;
+  
+  }
+  .nav-link {
+    font-size: .9rem;
+  }
+  .liteMenuGrid{
+    gap: 6px;
+    grid-template-columns: 1fr 1fr;
+    padding: .5rem;
+  
+  }
+  .aboutPara{
+    max-width: 100%;
+  }
+}
+
+.social {
+  text-align: center;
+  font-size: 40px;
+}
+
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  p {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  a{
+    #links;
+  }
+}
+
+@media screen and (@smallSize) {
+  .navbar-toggler {
+    padding: 0.1rem 0.2rem;
+    font-size: 0.9rem;
+  }
+  .navbar-brand {
+    width: 80%;
+  }
+  #theNav {
+    padding: 0;
+  }
+  .nav-link {
+    font-size: .7rem;
+  }
+  .liteMenuGrid{
+    gap: 4px;
+    grid-template-columns: 1fr !important;
+    padding: .25rem;
+  
+  }
+  .aboutPara{
+    max-width: 100%;
+  }
+}
